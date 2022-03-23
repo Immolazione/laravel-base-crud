@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    @foreach($comics as $comic)
+    @foreach($comics as $index => $comic)
     <ul>
         <li>{{ $comic['title'] }}</li>
         <li>{{ substr($comic['description'], 0, 100) }}</li>
@@ -16,7 +16,7 @@
         <li>{{ $comic['series'] }}</li>
         <li>{{ $comic['sale_date'] }}</li>
         <li>{{ $comic['type'] }}</li>
-        <li><a href="/">Dettagli</a></li>
+        <li><a href="{{ route('comics.show', $index) }}">Dettagli</a></li>
     </ul>
     @endforeach
 </body>
