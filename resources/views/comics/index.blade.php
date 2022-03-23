@@ -11,10 +11,12 @@
     <ul>
         <li>{{ $comic['title'] }}</li>
         <li>{{ substr($comic['description'], 0, 100) }}</li>
+        <li>{{ $comic['thumb'] }}</li>
         <li>{{ $comic['price'] }}</li>
         <li>{{ $comic['series'] }}</li>
         <li>{{ $comic['sale_date'] }}</li>
         <li>{{ $comic['type'] }}</li>
+        <li><a href="/">Dettagli</a></li>
     </ul>
     @endforeach
 </body>
