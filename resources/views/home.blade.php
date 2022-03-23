@@ -8,6 +8,9 @@
     <title>Crude</title>
 </head>
 <body>
-    <h1 class="container">AAAAAAAAAAAAAA</h1>
+    <div class="container">
+        <h1>DC COMICS</h1>
+        <a href="/comics">Lista Fumetti</a>
+    </div>
 </body>
 </html>
