@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1>DC COMICS</h1>
-        <a href="/comics">Lista Fumetti</a>
+        <a href="{{ route('comics.index') }}">Lista Fumetti</a>
     </div>
 </body>
 </html>
