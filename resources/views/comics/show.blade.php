@@ -16,7 +16,7 @@
         <li>{{ $comic['sale_date'] }}</li>
         <li>{{ $comic['type'] }}</li>
          <a href="{{ {{--URL::previous()--}} route('comics.index') }}">Indietro</a> 
-         <a href="{{route('comics.edit') }}">Modifica</a> 
+         <a href="{{route('comics.edit', $comic->id) }}">Modifica</a> 
     </ul>
 </body>
 </html>
