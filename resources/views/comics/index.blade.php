@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="{{ route('comics.create') }}">Crea Fumetto</a>
+
     @foreach($comics as $comic)
     <ul>
         <li>{{ $comic['title'] }}</li>
@@ -19,6 +21,7 @@
     </ul>
     <a href="{{ route('comics.show', $comic->id) }}">Dettagli</a>
     <a href="{{ route('comics.edit', $comic->id) }}">Modifica</a>
+    
     <form 
         action="{{ route('comics.destroy', $comic->id) }}" 
         method="POST">
