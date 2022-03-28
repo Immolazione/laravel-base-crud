@@ -16,8 +16,16 @@
         <li>{{ $comic['series'] }}</li>
         <li>{{ $comic['sale_date'] }}</li>
         <li>{{ $comic['type'] }}</li>
-        <li><a href="{{ route('comics.show', $comic['id']) }}">Dettagli</a></li>
     </ul>
+    <a href="{{ route('comics.show', $comic->id) }}">Dettagli</a>
+    <a href="{{ route('comics.edit', $comic->id) }}">Modifica</a>
+    <form 
+        action="{{ route('comics.destroy', $comic->id) }}" 
+        method="POST">
+        @METHOD('delete')
+        @CSRF
+            <button type="submit">Elimina</button>
+    </form>
     @endforeach
 </body>
 </html>
