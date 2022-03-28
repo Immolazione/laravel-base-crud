@@ -11,7 +11,7 @@
     <div class="container">
         <h1>DC COMICS</h1>
         <a href="{{ route('comics.index') }}">Lista Fumetti</a>
-        <a href="{{ route('comics.create') }}">Crea Squadra</a>
+        <a href="{{ route('comics.create') }}">Crea Fumetto</a>
     </div>
 </body>
 </html>
